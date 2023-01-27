@@ -1,7 +1,5 @@
 package test;
 
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +22,7 @@ private static WebDriver driver = null;
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();		
-		driver.get("https://the-internet.herokuapp.com");
+		driver.get("https://the-internet.herokuapp.com/");
 	}
 	
 	@Test(priority = 1)
